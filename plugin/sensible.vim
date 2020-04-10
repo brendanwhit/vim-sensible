@@ -30,9 +30,9 @@ if !has('nvim') && &ttimeoutlen == -1
 endif
 
 set incsearch
-" Use <C-L> to clear the highlighting of :set hlsearch.
-if maparg('<C-L>', 'n') ==# ''
-  nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
+" Use <C-M> to clear the highlighting of :set hlsearch.
+if maparg('<C-M>', 'n') ==# ''
+  nnoremap <silent> <C-M> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-M>
 endif
 
 set laststatus=2
