@@ -1,3 +1,18 @@
+# How to update changes
+
+This section is maintained by brendanwhit
+
+To properly set up to maintain local changes and track sensible.vim changes
+that don't break my local changes:
+
+  git clone https://github.com/brendanwhit/vim-setup.git
+  git remote add --track master upstream https://github.com/tpope/vim-sensible/
+  git fetch upstream
+  git rebase upstream/master
+
+This workflow will leave any custom mappings or settings I have created, and
+allow for upstream changes to be pulled in.
+
 # sensible.vim
 
 Think of sensible.vim as one step above `'nocompatible'` mode: a universal
